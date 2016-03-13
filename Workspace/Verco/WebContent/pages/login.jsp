@@ -3,7 +3,7 @@
 <%@ taglib uri="WEB-INF/struts-bean" prefix="bean"%>
 <html>
 <head>
-   <title>  VERCO - Venta de Articulos deportivos </title>
+   <title>  VERCO - Venta de Articulos Deportivos </title>
 <meta http-equiv="" content="text/html; charset=iso-8859-1">
 
 <link rel="stylesheet" type="text/css" href="<html:rewrite page='/pages/css/estilos.css'/>">
