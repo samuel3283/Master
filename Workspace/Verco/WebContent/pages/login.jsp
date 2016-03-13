@@ -8,6 +8,8 @@
 
 
 
+
+
 <link rel="stylesheet" type="text/css" href="<html:rewrite page='/pages/css/estilos.css'/>">
 
 
