@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+          "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+<struts-config>
+
+  <form-beans>
+    <form-bean name="LoginForm" type="pe.com.nextel.provisioning.controller.form.LoginForm"/>
+    <form-bean name="consultaForm" type="pe.com.nextel.provisioning.controller.form.ConsultaForm"/>
+    <form-bean name="GestionProcesosForm" type="pe.com.nextel.provisioning.controller.form.GestionProcesosForm"/>
+ </form-beans>
+  
+<!--  
+  <global-forwards>
+    <forward name="errorGeneral" path="/pages/error.jsp"/>
+  </global-forwards>
+-->
+  <action-mappings>
+    
+    <action path="/Login" 
+            type="pe.com.nextel.provisioning.controller.action.LoginAction"
+            name="LoginForm" 
+            input="/pages/login.jsp"
+            parameter="method"
+            validate="true">
+      <forward name="inicio" path="/pages/login.jsp"/>
+      <forward name="cuenta" path="/pages/cuenta.jsp"/>
+    </action>
+    
+    <action path="/GestionProcesos" 
+            type="pe.com.nextel.provisioning.controller.action.GestionProcesosAction"
+            name="GestionProcesosForm" 
+            input="/pages/procesos/index.jsp"
+            parameter="method"
+            validate="true">
+      <forward name="inicio" path="site.soporte.inicio"/>
+      <forward name="procesar" path="site.proceso.procesar"/>
+      
+    </action>
+            		
+	<action	path="/consultaAction"
+	        name="consultaForm"
+		    parameter="method"
+		    scope="request"
+		    validate="true"
+		    type="pe.com.nextel.provisioning.controller.action.ConsultaAction">
+		<forward name="error" path="/error.jsp"/>
+		
+		<forward name="registrocliente" path="site.consulta.registrocliente"/>
+      	<forward name="consultaproducto" path="site.consulta.consultaproducto"/>
+	   	<forward name="disproducto" path="site.consulta.disponibilidad"/>
+	   	<forward name="disproducto2" path="/pages/procesos/disponibilidad.jsp"/>
+	   	<forward name="carrito" path="site.consulta.carrito"/>
+		
+      	<forward name="listarConsulta1" path="site.consulta.listar"/>
+      	<forward name="listarConsulta2" path="site.consulta.listar2"/>
+      	<forward name="consulta0" path="site.consulta0.listar"/>
+      	<forward name="consultaM" path="site.consultaM.listar"/>
+      	<forward name="consultaMC" path="site.consultaMC.listar"/>
+      	<forward name="consulta1" path="site.consulta1.listar"/>
+      	<forward name="facturacion" path="site.consulta1.facturacion"/>
+      	<forward name="listarConsulta3" path="site.consulta.listar3"/>
+      	<forward name="mensajePep" path="site.consulta1.mensajePep"/>
+      	<forward name="consultaOCC" path="site.consulta1.consultaOcc"/>
+      	<forward name="consultaOCCXls" path="/pages/consulta/consultaOcc_xls.jsp"/>
+      	
+      	<forward name="consultaRec" path="site.consulta1.consultaRec"/>
+      	<forward name="consultaRecXls" path="/pages/consulta/consultaRec_xls.jsp"/>
+
+      	<forward name="consultaSol" path="site.consulta1.consultaSol"/>
+      	<forward name="consultaNum" path="site.consulta1.consultaNum"/>
+      	<forward name="consultaEst" path="site.consulta1.consultaEst"/>
+
+      	<forward name="consultaEstSr" path="site.consulta1.consultaEstSr"/>
+      	
+      	<forward name="numeroPortado" path="site.consulta1.numeroPortado"/>
+      	<forward name="numeroPortadoXls" path="/pages/consulta/numeroPortado_xls.jsp"/>
+      	
+      	<forward name="consultaPreFacturado" path="site.consulta.preFacturado"/>
+      	<forward name="consulPreFacturadoXls" path="/pages/consulta/PreFacturacionXls.jsp"/>
+      	<forward name="consulPreFacturado" path="site.consulta.listapreFacturado"/>
+
+      	<forward name="validaPortado" path="site.consulta.validaPortado"/>
+      	
+   </action>  
+          
+  </action-mappings>  
+
+  <controller>
+	<set-property  property="processorClass"
+	value="org.apache.struts.tiles.TilesRequestProcessor"/>
+  </controller>
+  
+  <!-- Recursos de mensaje -->
+  <message-resources parameter="pe.com.nextel.provisioning.view.MessageResources" null="false"/>
+  
+  <plug-in className="org.apache.struts.tiles.TilesPlugin">
+    <set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml"/>
+    <set-property property="moduleAware" value="true"/>
+    <set-property property="definitions-parser-validate" value="true"/>    
+  </plug-in>
+
+ 
+</struts-config>

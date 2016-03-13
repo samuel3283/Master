@@ -1,0 +1,21 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:smar="http://10.85.152.97:8080//axis/NPServiceProcess">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <smar:ADD_USR>
+         <USERNAME>Provisioning</USERNAME>
+         <PASSWORD>123456</PASSWORD>
+         <Number>51199985555</Number>
+         <NumberType>2</NumberType>
+         <IMSI></IMSI>
+         <HLRAddress>5118100003</HLRAddress>
+         <NewRoute>27</NewRoute>
+         <OperatorCode></OperatorCode>
+         <LocationCode></LocationCode>
+         <InterconnectCode></InterconnectCode>
+         <CPcode></CPcode>
+         <CNL></CNL>
+         <RecipientID></RecipientID>
+         <DonorID></DonorID>
+      </smar:ADD_USR>
+   </soapenv:Body>
+</soapenv:Envelope>

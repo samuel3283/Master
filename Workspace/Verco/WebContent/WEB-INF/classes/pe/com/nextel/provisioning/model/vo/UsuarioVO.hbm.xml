@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+                            "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                            "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="pe.com.nextel.provisioning.model.vo">
+	<class name="UsuarioVO" table="TUSUARIO">
+		<id name="codUsuario" column="CODUSUARIO" type="java.lang.Integer">
+			
+			 <!-- para oracle y postgresql sequence generator -->
+			 <generator class="sequence">
+             <param name="sequence">SEQ_USUARIOS</param>
+             </generator>
+			 	
+			 <!--  mysql generator 
+             <generator class="increment"/>  -->
+		</id>
+		
+		<!--  
+		<set name="books" inverse="false" >
+			<key>
+				<column name="customer_fk"></column>
+			</key>
+			<one-to-many class="Book" />
+		</set>
+		-->
+		<property name="usuario" column="USUARIO" type="java.lang.String" />
+		<property name="password" column="PASSWORD" type="java.lang.String" />
+		<property name="nombre" column="NOMBRE" type="java.lang.String" />
+		<property name="fecha_registro" column="FECHA_REGISTRO" type="date" />
+		<property name="usuario_registro" column="USUARIO_REGISTRO" type="java.lang.Integer" />
+		<property name="estado" column="ESTADO" type="java.lang.String" />
+	</class>
+</hibernate-mapping>

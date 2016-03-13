@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/tiles-config_1_1.dtd">
+<tiles-definitions>
+
+	<!-- ========================================================== -->
+	<!-- Definition de las plantillas maestras                      -->
+	<!-- ========================================================== -->
+
+	<definition name="site.mainLayout" path="/pages/layouts/mainLayout.jsp">
+		<put name="title" value="Bienvenida" />
+        <put name="header" value="/pages/layouts/header.jsp" />
+		<put name="footer" value="/pages/layouts/footer.jsp" />
+		<put name="menu" value="/pages/layouts/menu.jsp" />		
+		<put name="body" value="/pages/layouts/body.jsp" />
+	</definition>
+	
+    <!-- Pagina Principal -->
+    <definition name="site.soporte.inicio" extends="site.mainLayout">
+    <put name="title" value="Soporte Portabilidad"/>
+    <put name="body"  value="/pages/procesos/index.jsp"/>          
+    </definition>       
+                    
+    <definition name="site.proceso.procesar" extends="site.mainLayout">
+    <put name="title" value="Procesar Archivos"/>
+    <put name="body"  value="/pages/procesos/procesarArchivos.jsp"/>      
+    </definition>       
+                    
+
+    <definition name="site.consulta.registrocliente" extends="site.mainLayout">
+    <put name="title" value="Registro de Cliente"/>
+    <put name="body"  value="/pages/procesos/registro_cliente.jsp"/>          
+    </definition>
+		
+	
+    <definition name="site.consulta.consultaproducto" extends="site.mainLayout">
+    <put name="title" value="Consulta Productos"/>
+    <put name="body"  value="/pages/procesos/consulta_productos.jsp"/>          
+    </definition>
+
+    <definition name="site.consulta.disponibilidad" extends="site.mainLayout">
+    <put name="title" value="Verificar Disponibilidad de Productos"/>
+    <put name="body"  value="/pages/procesos/disponibilidad.jsp"/>          
+    </definition>
+
+	
+    <definition name="site.consulta.carrito" extends="site.mainLayout">
+    <put name="title" value="Generar Pedido"/>
+    <put name="body"  value="/pages/procesos/carrito_productos.jsp"/>          
+    </definition>
+
+    <definition name="site.consulta.listar" extends="site.mainLayout">
+    <put name="title" value="Muestra lista de Consultas"/>
+    <put name="body"  value="/pages/consulta/consulta.jsp"/>          
+    </definition>
+    
+     <definition name="site.consulta.listar2" extends="site.mainLayout">
+    <put name="title" value="Muestra lista de Consultas"/>
+    <put name="body"  value="/pages/consulta/consulta_2.jsp"/>          
+    </definition>
+     <definition name="site.consulta.listar3" extends="site.mainLayout">
+    <put name="title" value="Muestra lista de Consultas"/>
+    <put name="body"  value="/pages/consulta/consultaSendXls.jsp"/>          
+    </definition>
+    <definition name="site.consulta0.listar" extends="site.mainLayout">
+    <put name="title" value="Muestra lista de Consultas"/>
+    <put name="body"  value="/pages/consulta/consulta0.jsp"/>          
+    </definition>
+    
+    <definition name="site.consulta1.listar" extends="site.mainLayout">
+    <put name="title" value="Muestra lista de Consultas"/>
+    <put name="body"  value="/pages/consulta/consulta1.jsp"/>          
+    </definition>
+    
+    <definition name="site.consulta1.facturacion" extends="site.mainLayout">
+    <put name="title" value="Facturación"/>
+    <put name="body"  value="/pages/consulta/facturacion.jsp"/>          
+    </definition>
+    
+    <definition name="site.consulta1.mensajePep" extends="site.mainLayout">
+    <put name="title" value="Mensajes Pep"/>
+    <put name="body"  value="/pages/consulta/mensajePep.jsp"/>          
+    </definition>
+    
+    <definition name="site.consulta1.consultaOcc" extends="site.mainLayout">
+    <put name="title" value="Mensajes OCC"/>
+    <put name="body"  value="/pages/consulta/consultaOcc.jsp"/>          
+    </definition>
+    			      
+    <definition name="site.consulta1.consultaRec" extends="site.mainLayout">
+    <put name="title" value="Mensajes RABDCP"/>
+    <put name="body"  value="/pages/consulta/consultaRec.jsp"/>          
+    </definition>
+    
+    <definition name="site.consulta1.consultaSol" extends="site.mainLayout">
+    <put name="title" value="Solicitudes de Portabilidad"/>
+    <put name="body"  value="/pages/consulta/solicitudes.jsp"/>          
+    </definition>
+    
+    <definition name="site.consulta1.consultaNum" extends="site.mainLayout">
+    <put name="title" value="Solicitudes de Portabilidad"/>
+    <put name="body"  value="/pages/consulta/solicitudesNumero.jsp"/>          
+    </definition>
+    
+    <definition name="site.consulta1.consultaEst" extends="site.mainLayout">
+    <put name="title" value="Estadisticas de Portabilidad"/>
+    <put name="body"  value="/pages/consulta/estadistica.jsp"/>          
+    </definition>   
+
+    <definition name="site.consulta1.consultaEstSr" extends="site.mainLayout">
+    <put name="title" value="Estadisticas de Retornos"/>
+    <put name="body"  value="/pages/consulta/estadisticaSr.jsp"/>          
+    </definition>   
+
+    <definition name="site.consulta1.numeroPortado" extends="site.mainLayout">
+    <put name="title" value="Números Portados"/>
+    <put name="body"  value="/pages/consulta/numerosPortados.jsp"/>          
+    </definition>
+    
+    <definition name="site.consultaM.listar" extends="site.mainLayout">
+    <put name="title" value="Muestra lista de Consultas"/>
+    <put name="body"  value="/pages/consulta/consultaM.jsp"/>          
+    </definition>
+    
+    <definition name="site.consultaMC.listar" extends="site.mainLayout">
+    <put name="title" value="Muestra lista de Consultas"/>
+    <put name="body"  value="/pages/consulta/consultaMC.jsp"/>          
+    </definition>
+                
+                
+    <definition name="site.consulta.preFacturado" extends="site.mainLayout">
+    <put name="title" value="Números Portados"/>
+    <put name="body"  value="/pages/consulta/consultaPreFacturacion.jsp"/>          
+    </definition>    
+    <definition name="site.consulta.listapreFacturado" extends="site.mainLayout">
+    <put name="title" value="Números Portados"/>
+    <put name="body"  value="/pages/consulta/consultaListaPreFact.jsp"/>          
+    </definition>
+    
+    
+    <definition name="site.consulta.validaPortado" extends="site.mainLayout">
+    <put name="title" value="Validar Numeración Portada"/>
+    <put name="body"  value="/pages/consulta/validaPortados.jsp"/>          
+    </definition>
+                
+</tiles-definitions>

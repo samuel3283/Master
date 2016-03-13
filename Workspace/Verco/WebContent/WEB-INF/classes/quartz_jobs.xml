@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<quartz xmlns="http://www.opensymphony.com/quartz/JobSchedulingData"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.opensymphony.com/quartz/JobSchedulingData
+                      http://www.opensymphony.com/quartz/xml/job_scheduling_data_1_5.xsd"
+    version="1.5">
+    
+    <job>
+        <job-detail>
+            <name>JobIniciarAprovisionamiento</name>
+            <group>GrupoAprovisionamiento</group>
+            <description>JobInicial</description>
+            <job-class>pe.com.nextel.provisioning.framework.scheduler.ProcesoJob</job-class>
+            <job-data-map allows-transient-data="false">
+                <entry>
+                    <key>name</key>
+                    <value>Aprovisionamiento</value>
+                </entry>
+            </job-data-map>
+        </job-detail>
+     	
+        <trigger>
+            <cron>
+                <name>AprovisionamientoTrigger</name>
+                <group>GrupoTrigger</group>
+                <job-name>JobIniciarAprovisionamiento</job-name>
+                <job-group>GrupoAprovisionamiento</job-group>
+                <cron-expression>0 0 23 * * ?</cron-expression>
+            </cron>
+        </trigger>
+    </job>
+
+
+
+	
+    
+    <job>
+        <job-detail>
+            <name>JobReporteXls</name>
+            <group>GrupoJobReporteXls</group>
+            <description>Monitorio de la tabla JOB_REPORTE</description>
+            <job-class>pe.com.nextel.provisioning.framework.scheduler.ReporteJob</job-class>
+        </job-detail>
+        
+        <trigger>
+            <cron>
+                <name>JobReporteXlsTrigger</name>
+                <group>JobReporteXlsGrupoTrigger</group>
+                <job-name>JobReporteXls</job-name>
+                <job-group>GrupoJobReporteXls</job-group>
+                <cron-expression>0 0 23 * * ?</cron-expression>
+            </cron>
+        </trigger>
+    </job>
+                 
+</quartz>

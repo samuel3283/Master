@@ -1,0 +1,181 @@
+/* ESTILOS FRANK */
+BODY {
+	FONT-SIZE:10px;
+	COLOR:#000;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	FONT-FAMILY:verdana,arial,helvetica,sans-serif;
+	BACKGROUND-COLOR: #ffffff;
+}
+
+TABLE{FONT-SIZE:10px;PADDING-RIGHT:0px;PADDING-LEFT:0px;PADDING-BOTTOM:0px;MARGIN:0px;WIDTH: PADDING-TOP:0px;align:;border:0;}
+H1.SaltoDePagina{PAGE-BREAK-AFTER:always}
+.T1{FONT-WEIGHT:900;FONT-SIZE:18px;background-color:#39c;FONT-FAMILY:verdana, arial, helvetica, sans-serif;text-align:center;}
+.T2{FONT-WEIGHT:900;FONT-SIZE:18px;background-color:#fff;FONT-FAMILY:verdana, arial, helvetica, sans-serif;text-align:center;text-transform:capitalize;}
+.T3{FONT-WEIGHT:900;FONT-SIZE:14px;background-color:#336699;COLOR:#FFF;FONT-FAMILY: verdana, arial, helvetica, sans-serif;TEXT-DECORATION: none;text-align:center;}
+A {font-size:11px;font-style:italic;}
+A:link {text-decoration:none;color:#00f;}
+A:visited{text-decoration:none;color:#30c;}
+A:hover{text-decoration: underline;color:Red;}
+A:active{text-decoration:none;color:#0c9;border:1px dotted Lime;}
+.buttonbar{background-color:#fff;height:28px;padding-top:3px;padding-left:3px;border-top:1px solid Black;margin-top:6px;}
+SELECT {FONT-FAMILY:verdana,arial,helvetica,sans-serif;FONT-SIZE:9px;border-color:#CCC;border-style:solid;border-width:1px;}
+.form-table {border-color:#4682B4;border-style:solid;border-width:1px;}
+.form-table-2 {font-size:10px;border-color:#4682B4;border-style:solid;border-width:1px;}
+.form-button {FONT-SIZE:10px;border-color:#69C;border-style:solid;border-width:1px;cursor:hand}
+.form-button-hover {FONT-SIZE:10px;border-bottom:solid 1px #69C;border-left:solid 1px #FFF;border-right: solid 1px #6699CC;border-top:solid 1px #FFF;}
+.form-text { border-color:#CCC;border-style:solid;border-width:1px; font-family:verdana,Arial}
+.form-text-disabled { border-color:#e9e9e9;border-style:solid;border-width:1px; font-family:verdana,Arial;background-color:#f4f4f4}
+.form-radio {vertical-align:middle;}
+P.caratula {font-size:14px;text-align:justify;margin-left:5px;margin-right:30px;}
+P.piepagina {font-size:10px;text-align:left;font-weight:bold;font-style:italic;border-top: 1 solid Navy;}
+/* ALPHA */
+A.alpha {color:#000;text-decoration:none;}
+TR.alpha {background-color:#69C;}
+TD.alpha {background-color:#69C;}
+TD.alpha-total{font-size: 12px; font-weight: bold;}
+.alpha-neg-alert {color:#F00;}
+.alpha-pos-alert {color:#007F00;}
+/* BETA */
+A.beta {color: #000; text-decoration:none;}
+TR.beta {background-color:#B6CBEB;}
+TD.beta {background-color:#B6CBEB;}
+TH.beta {background-color:#B6CBEB;}
+.beta-neg-alert {color:#FF0000;}
+.beta-pos-alert {color:#007F00;}
+/* GAMMA */
+A.gamma {color:#000;text-decoration:none;}
+TR.gamma {background-color:#EEE;}
+TD.gamma {background-color:#EEE;}
+TD.gamma-total{font-size: 11px;font-weight: bold;background-color: #FFFFE0;}
+.gamma-neg-alert {color:#FF0000;}
+.gamma-pos-alert {color:#007F00;}
+/* BG */
+A.bg {color:#000;text-decoration:none;}
+TBODY.bg {background-color:#FFF;}
+TR.bg {background-color:#FFF;}
+.bg7 {font-size:7pt;}
+TD.bg {background-color:#FFF;}
+SELECT.bg{font-size:11px;}
+.bg7 {background-color:#FFF;font-size:7pt;}
+.bg-neg-alert {color:#F00;}
+.bg-pos-alert {color:#007F00;}
+.bg-disabled {color: #B9B9B9;}
+/* BGN */
+A.bgn {color:#000;text-decoration:none;FONT-WEIGHT:900;}
+A.bgn:hover {color:#960;text-decoration:underline;FONT-WEIGHT:900;}
+TR.bgn {background-color:#FFF;FONT-WEIGHT:900;}
+TD.bgn {background-color:#FFF;FONT-WEIGHT:900;}
+.bgn-neg-alert {color:#F00;FONT-WEIGHT:900;}
+.bgn-pos-alert {color:#007F00;FONT-WEIGHT:900;}
+.bgn-required {color:#0000CC;FONT-WEIGHT:900;}
+P.titulografico {font-weight: bold;}
+/* Fin Estilos Frank */
+.errorLogin {
+    font-size : 11px;
+    font-family : verdana,arial,helvetica,sans-serif;
+    color: #FF0000;
+    font-weight: bold; }
+    
+.input {
+	background:#FBFEFF;
+	border:1px solid #ccc;
+	font-family:'Tahoma';
+	color:#666666; height:auto
+}
+.button {
+ background:url(<%=request.getContextPath()%>/pages/images/reporte.png) no-repeat;
+ color:#FFFFFF;
+ font-family:'Tahoma';
+ font-weight:400;
+ font-size:11px;
+ cursor:pointer; 
+ height:24px;
+ border:none;
+ width:75px;
+}
+
+.pieletra {
+    font-size : 11px;
+    font-family : verdana,arial,helvetica,sans-serif;
+    color: #7E8083;
+    font-weight: bold; 
+}
+ 
+/*ESTILOS PROVISIONING*/
+/*TABLE*/
+.gNarrowContentSection		{
+  BORDER-RIGHT: #B0C4DE solid 1px;
+  BORDER-TOP: #B0C4DE solid 1px;
+  FONT: 10px verdana,arial,helvetica,"sans-serif";
+  BORDER-LEFT: #B0C4DE solid 1px;
+  COLOR: #6D6D6D;
+  BORDER-BOTTOM: #B0C4DE solid 1px;
+  BACKGROUND-COLOR: #F4F4F4;
+}
+.tablaCrearEditar {
+	margin-left: -2px;
+}
+
+/*DISPLAY:TABLE*/
+table.tablaBordeGrisNormal{
+	border: solid 1px #336699;  
+	/*border: solid 1px #B03248;*/
+}
+.newsTituloCabecera {font-family: verdana; font-size: 12px;  color: #FFFFFF;
+  border-left: 3px #336699; solid;  border-top: 3px #336699; solid;  border-bottom: 3px #336699; solid;
+  border-right: 3px #336699; solid;  font-weight: bold;  background-color: #336699;}
+
+/*TD*/
+.columnaIzquierdaTabla {
+	padding-left: 10px;
+}
+.indicadorCampoObligatorio {
+	color: #FF0000;
+	font-weight: bold;
+}
+.subtitulo	{
+	color: #9A142E;  
+	font: bold 11px verdana,arial,helvetica,"sans-serif";  
+	text-decoration: none;}	
+.campoObligatorio {
+	background: #f7f5d1;
+}
+.textBold {
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+	padding-bottom:1px;
+	padding-top:1px;	
+}
+
+.itemToolbar {
+	display: block;
+	padding: 2px;
+	padding-top: 5px;
+	float: left;
+	width: 29px;
+	height: 27px;
+}
+.itemToolbar:hover {	
+	border: 1px solid #999999;
+	background-color: #FFFFFF;
+	width: 27px;
+	height: 25px;
+}
+/*LIST STYLES*/
+	/* background styles*/
+.listSortHeaderBg		{background-color: #CCCCCC;}
+.listItemOneBg		{background-color: #EDEDED;}
+.listItemTwoBg		{background-color: #FFFFFF;}
+
+/* FORM ELEMENTS STYLES*/
+.formInputBoxText		{color: #000000; font: 10px verdana,arial,helvetica,"sans-serif"; text-decoration: none;}
+.formBtnText		{color: #000000; font: 10px verdana,arial,helvetica,"sans-serif"; text-decoration: none; background-color: #CCCCCC;}    
+.formEditorBtnText		{color: #000000; font: 10px verdana,arial,helvetica,"sans-serif"; text-decoration: none; background-color: #F0F0F0;}
+
+.PTToolbarBackgroundLighter {
+	background-color: #F4F4F4;
+}

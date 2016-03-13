@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+<session-factory>
+<!--  postgresql configuration 
+	<property name="connection.url">jdbc:postgresql://localhost/libraryweb</property>
+	<property name="connection.username">postgres</property>
+	<property name="connection.password">p</property>
+	<property name="connection.driver_class">org.postgresql.Driver</property>
+	<property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+	-->
+	
+	<!--  oracle configuration -->
+	<property name="dialect">org.hibernate.dialect.Oracle10gDialect</property>
+    <property name="connection.driver_class">oracle.jdbc.OracleDriver</property>
+    <property name="connection.url">jdbc:oracle:thin:@172.26.30.142:1521:WAPQQA</property>
+    <property name="connection.username">oficinasbec</property>
+    <property name="connection.password">oficinasbec</property>
+    <property name="cache.provider_class">org.hibernate.cache.HashtableCacheProvider</property>
+    <property name="transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</property>
+    <property name="current_session_context_class">thread</property>
+    <property name="hibernate.show_sql">false</property>
+	
+	<mapping resource="pe/com/nextel/provisioning/model/vo/UsuarioVO.hbm.xml" />
+	
+<!--  mysql configuration 
+	<property name="connection.url">jdbc:mysql://localhost:3306/agente</property>
+	<property name="connection.username">root</property>
+	<property name="connection.password">7895123</property>
+	<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+	<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+	
+	<mapping resource="de/laliluna/library/Book.hbm.xml" />
+	<mapping resource="de/laliluna/library/Customer.hbm.xml" />-->
+	
+	
+</session-factory>
+</hibernate-configuration>
